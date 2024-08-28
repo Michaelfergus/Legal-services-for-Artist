@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Legal Clinic</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body id="top">
+    
+        <!-- preloader
+    ================================================== -->
+     <div id="preloader">
+        <div id="loader"></div>
+    </div> 
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row">
+
+            <div class="s-header__logo">
+                <a href="index.html">
+                    <!-- Legal Clinic logo -->
+                </a>
+            </div>
+
+            <nav class="s-header__nav">
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li class="current"><a href="#">Book Now</a></li>
+                </ul>
+            </nav>
+
+            <a class="s-header__menu-toggle" href="#0" title="Menu">
+                <span class="s-header__menu-icon"></span>
+            </a>
+
+        </div> <!-- end row -->
+    </header> <!-- end s-header -->
+    
+    <?php
+    if (isset($_GET['user'])) {
+        // Retrieve the ID from the URL
+        $id = $_GET['user'];
+        
+        // Use the ID as needed, for example, display it
+        echo "ID from URL: " . htmlspecialchars($id);
+    } else {
+        echo "ID parameter is missing from the URL.";
+    }
+?>     
+   
+    <section class=" s-form" data-natural-width="3000" data-natural-height="2000">
+
+        <div class="column large-6 tab-20">
+<center>
+            <h3>Client Intake Form</h3>
+            Description of Legal Issue
+        </center>           
+
+            <form action="./book/process_form2.php" method="POST">
+                <label class="h-add-bottom">
+                    <label>Type of Legal Issue *</label>
+                    <input type="checkbox" name="legal_issue" value="Branding">
+                    <span class="label-text">Branding</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Business organization">
+                    <span class="label-text" >Business organization</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Contracts">
+                    <span class="label-text">Contracts</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Copyright">
+                    <span class="label-text">Copyright</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Criminal">
+                    <span class="label-text">Criminal</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Employment">
+                    <span class="label-text">Employment </span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Housing">
+                    <span class="label-text">Housing</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Incorporation">
+                    <span class="label-text">Incorporation</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Intellectual property">
+                    <span class="label-text">Intellectual property</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue"  value="Leases">
+                    <span class="label-text">Leases</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Licensing">
+                    <span class="label-text">Licensing</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Publishing (literary works)">
+                    <span class="label-text">Publishing (literary works)</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Publishing (musical works)">
+                    <span class="label-text">Publishing (musical works)</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Real estate">
+                    <span class="label-text">Real estate</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Sale of goods/services">
+                    <span class="label-text">Sale of goods/services</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Tax  Tenancy (studio, work space etc.)">
+                    <span class="label-text">Tax  Tenancy (studio, work space etc.)</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Wills and estates">
+                    <span class="label-text">Wills and estates</span>
+                    <br>
+                    <input type="checkbox" name="legal_issue" value="Other">
+                    <span class="label-text">Other</span>
+                </label>
+                <label>What's happening and how can we help?*</label>
+                <p>Please give us a brief description of your issue(s) and the surrounding circumstances including details you believe to be relevant. Please detail any specific questions and any particular outcomes you are hoping for.</p>
+                <textarea class="h-full-width" placeholder="" name="circumstances" required></textarea>
+                <label>Deadline*</label>
+                <p>Are there any upcoming deadlines or timeline for the legal advice and information you are seeking? Please note that The Legal Clinic is unable to assist with ongoing litigation (an active lawsuit, e.g., being sued or suing another party). If you are facing an upcoming court deadline, we recommend that you contact the Law Society of Ontario’s Law Society Referral Service to be referred to a legal professional who can assist you in a timely manner, or contact a legal clinic that offers assistance in the area of your needs.</p>
+                <textarea class="h-full-width" placeholder="" name="deadlines" required></textarea>
+
+               
+
+               <input class="btn--primary h-full-width" type="submit" value="Next">
+            </form>
+
+        </div>
+</section>
+
+ <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Legal Clinic 2024</span> 
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
+
+<!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

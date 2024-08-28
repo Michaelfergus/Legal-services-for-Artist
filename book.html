@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Legal Clinic</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body id="top">
+    
+        <!-- preloader
+    ================================================== -->
+     <div id="preloader">
+        <div id="loader"></div>
+    </div> 
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row">
+
+            <div class="s-header__logo">
+                <a href="index.html">
+                    <!-- Legal Clinic logo -->
+                </a>
+            </div>
+
+            <nav class="s-header__nav">
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li class="current"><a href="#">Book Now</a></li>
+                </ul>
+            </nav>
+
+            <a class="s-header__menu-toggle" href="#0" title="Menu">
+                <span class="s-header__menu-icon"></span>
+            </a>
+
+        </div> <!-- end row -->
+    </header> <!-- end s-header -->
+    
+    
+   
+    <section class=" s-form" data-natural-width="3000" data-natural-height="2000">
+
+        <div class="column large-6 tab-20">
+<center>
+            <h3 class="h-add-bottom">Booking Form</h3>
+            Artist Information
+        </center>
+
+            <form action="./book/process_form.php" method="POST">
+                <div>
+                    <label for="sampleInput">Fullname *</label>
+                    <input class="h-full-width" type="text" placeholder="John Doe" name="fullname" required>
+                </div>
+                <div>
+                    <label for="sampleInput">Preferred Name (if different than legal name)</label>
+                    <input class="h-full-width" type="text" placeholder="John S. Doe" name="preferred_name">
+                </div>
+                <div>
+                    <label for="sampleInput">Pronouns *</label>
+                    <input class="h-full-width" type="text" placeholder="" name="pronouns" required>
+                </div>
+                <div>
+                    <label for="sampleInput">Email *</label>
+                    <input class="h-full-width" type="email" placeholder="Johndoe@email.com" name="email" required>
+                </div>
+                <div>
+                    <label for="sampleInput">Phone *</label>
+                    <input class="h-full-width" type="tel" placeholder="(000)-000-000-000" name="phone" required>
+                </div>
+                <div>
+                    <label for="sampleRecipientInput">Does your legal question(s) pertain to an issue affecting you as an artist in Ghana. *</label>
+                    <div class="ss-custom-select">
+                        <select class="h-full-width" name="legal_question">
+                            <option value="yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="sampleInput">Digital Address *</label>
+                    <input class="h-full-width" type="text" placeholder="GT-1111-000" name="digital_address" required>
+                </div>
+                <label class="h-add-bottom">
+                    <label>Art Discipline *</label>
+                    <input type="checkbox" id="art" name="art_discipline" required>
+                    <span class="label-text">Media (Film, TV, Animation, Radio)</span>
+                    <br>
+                    <input type="checkbox" id="art" name="art_discipline">
+                    <span class="label-text">Performing Arts (Music, Theatre, Dance, Opera, Circus Arts, Performance Art)</span>
+                    <br>
+                    <input type="checkbox"  id="art" name="art_discipline">
+                    <span class="label-text">Visual Arts (Painting, Drawing, Sculpture, Photography)</span>
+                    <br>
+                    <input type="checkbox" id="art" name="art_discipline">
+                    <span class="label-text">New Media/Digital Arts</span>
+                    <br>
+                    <input type="checkbox" id="art" name="art_discipline">
+                    <span class="label-text">Music </span>
+                    <br>
+                    <input type="checkbox">
+                    <span class="label-text" id="art" name="art_discipline">Writing </span>
+                    <br>
+                    <input type="checkbox">
+                    <span class="label-text" id="art" name="art_discipline">Design (Illustration, Graphic, Industrial)</span>
+                    <br>
+                    <input type="checkbox">
+                    <span class="label-text" id="art" name="art_discipline">Other</span>
+                </label>
+
+                <input class="btn--primary h-full-width" type="submit" value="Next">
+            </form>
+
+        </div>
+</section>
+
+ <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Legal Clinic 2024</span> 
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+    <script>
+        function validateForm() {
+            var checkbox = document.getElementById('art');
+            
+            // Check if the checkbox is checked
+            if (!checkbox.checked) {
+                alert('Please tell us your Art Discipline');
+                return false; // Prevent form submission
+            }
+            
+            return true; // Allow form submission
+        }
+        </script>
+
+<!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
